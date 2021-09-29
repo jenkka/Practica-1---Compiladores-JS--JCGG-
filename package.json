@@ -10,18 +10,20 @@
     "scripts": "gulp scripts",
     "scripts:watch": "gulp scripts:watch",
     "build": "gulp",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "start": "node assets/scripts/main.js",
+    "heroku-postbuild": "gulp"
   },
   "author": "JCGG",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "gulp-typescript": "*",
     "sass": "^1.42.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
     "handlebars": "^4.7.7",
     "newsapi": "^2.4.1"
   }
