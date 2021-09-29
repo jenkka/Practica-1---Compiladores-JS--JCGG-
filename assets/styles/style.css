@@ -1,0 +1,41 @@
+.btn {
+  background-color: #3D56B2;
+}
+
+#title {
+  height: 100vh;
+  background-color: #14279B;
+  padding: 10% 25%;
+  text-align: center;
+}
+#title .icon {
+  color: #5C7AEA;
+}
+#title h1 {
+  color: white;
+  margin: 30px;
+}
+#title button {
+  margin-top: 25px;
+  background-color: #3D56B2;
+  border: none;
+  display: block;
+  margin: 25px auto 10%;
+}
+
+#news-container {
+  padding: 0 3%;
+}
+#news-container .card {
+  margin-top: 50px;
+}
+
+#news-container > div:last-child {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  #title {
+    padding: 10% 10%;
+  }
+}

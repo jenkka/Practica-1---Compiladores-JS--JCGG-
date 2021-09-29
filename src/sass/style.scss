@@ -1,0 +1,54 @@
+$dark-color: #14279B;
+$light-color: #3D56B2;
+$lighter-color: #5C7AEA;
+
+.btn {
+    background-color: $light-color;
+}
+
+#title {
+    height: 100vh;
+    background-color: $dark-color;
+    padding: 10% 25%;
+    text-align: center;
+
+    .icon {
+        color: $lighter-color;
+    }
+
+    h1 {
+        color: white;
+        margin: 30px;
+    }
+
+    button {
+        margin-top: 25px;
+        background-color: $light-color;
+        border: none;
+        display: block;
+        margin: 25px auto 10%;
+    }
+}
+
+#news-container {
+    padding: 0 3%;
+
+    .card {
+        margin-top: 50px;
+    }
+}
+
+#news-container > div:last-child {
+    margin-bottom: 50px;
+}
+
+
+// Media Queries
+$bp-xl: 1200px;
+$bp-lg: 992px;
+
+@media (max-width: $bp-lg) {
+    #title {
+        padding: 10% 10%;
+    }
+}
