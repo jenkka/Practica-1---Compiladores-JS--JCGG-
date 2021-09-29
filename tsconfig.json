@@ -4,6 +4,11 @@
     "compilerOptions": {
         "outDir": "scripts",
         "target": "es6",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "lib" : [
+            "es2017",
+            "DOM", 
+            "ScriptHost"
+        ]
     }
 }
