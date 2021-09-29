@@ -11,7 +11,7 @@
     "scripts:watch": "gulp scripts:watch",
     "build": "gulp",
     "serve": "gulp serve",
-    "start": "node assets/scripts/main.js",
+    "start": "gulp",
     "postinstall": "gulp"
   },
   "author": "JCGG",
