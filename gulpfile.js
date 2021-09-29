@@ -26,6 +26,13 @@ gulp.task('styles:watch', gulp.series('styles', function(done) {
 }));
 
 gulp.task('serve', function(done) {
+    browserSync({
+        server: {
+          baseDir: './'
+        },
+        port: process.env.PORT || 5000
+      });
+      
     const allTask = gulp.parallel('styles:watch', 'scripts:watch');
     allTask();
     done();
