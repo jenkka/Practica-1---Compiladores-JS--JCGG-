@@ -1,0 +1,24 @@
+{
+  "name": "compiladores-js-jcgg",
+  "version": "1.0.0",
+  "description": "Practica 1: Compiladores JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "gulp styles",
+    "styles:watch": "gulp styles:watch",
+    "scripts": "gulp scripts",
+    "scripts:watch": "gulp scripts:watch",
+    "build": "gulp",
+    "serve": "gulp serve"
+  },
+  "author": "JCGG",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-typescript": "*",
+    "sass": "^1.42.1",
+    "typescript": "^4.4.3"
+  }
+}
