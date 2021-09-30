@@ -1,6 +1,13 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass')(require('sass'));
-let tsc = require('gulp-typescript');
+import gulp from 'gulp';
+import tsc from 'gulp-typescript';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass( dartSass );
+
+
+// let gulp = require('gulp');
+// let sass = require('gulp-sass')(require('sass'));
+// let tsc = require('gulp-typescript');
 
 gulp.task('styles', function() {
     return gulp.src('src/sass/**/*.scss') // source files
