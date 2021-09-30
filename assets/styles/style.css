@@ -27,11 +27,7 @@
   padding: 0 3%;
 }
 #news-container .card {
-  margin-top: 50px;
-}
-
-#news-container > div:last-child {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 @media (max-width: 992px) {
