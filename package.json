@@ -12,8 +12,8 @@
     "scripts:watch": "gulp scripts:watch",
     "build": "gulp",
     "serve": "gulp serve",
-    "start": "gulp",
-    "postinstall": "gulp"
+    "start": "gulp serve",
+    "postinstall": "gulp default"
   },
   "author": "JCGG",
   "license": "ISC",
