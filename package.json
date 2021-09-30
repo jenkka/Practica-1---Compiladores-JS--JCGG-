@@ -2,7 +2,7 @@
   "name": "compiladores-js-jcgg",
   "version": "1.0.0",
   "description": "Practica 1: Compiladores JS",
-  "main": "assets/scripts/main.js",
+  "main": ".assets/scripts/main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,8 @@
     "scripts:watch": "gulp scripts:watch",
     "build": "gulp",
     "serve": "gulp serve",
-    "start": "gulp serve",
-    "postinstall": "gulp"
+    "start": "node .assets/scripts/main.js",
+    "postinstall": "gulp default"
   },
   "author": "JCGG",
   "license": "ISC",
