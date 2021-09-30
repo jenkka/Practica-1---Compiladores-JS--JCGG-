@@ -20,4 +20,6 @@ function displayNews() {
         console.error("Error: ", err);
     });
 }
-window.displayNews = displayNews;
+if (typeof window != "undefined") {
+    window.displayNews = displayNews;
+}
