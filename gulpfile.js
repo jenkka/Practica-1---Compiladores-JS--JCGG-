@@ -33,11 +33,12 @@ gulp.task('styles:watch', gulp.series('styles', function(done) {
 }));
 
 gulp.task('serve', function(done) {
-    connect.server({
-        root: [your_project_path],
-        port: process.env.PORT || 5000, // localhost:5000
-        livereload: false
-    });
+    browserSync({
+        server: {
+          baseDir: './'
+        },
+        port: process.env.PORT || 5000
+      });
 
     const allTask = gulp.parallel('styles:watch', 'scripts:watch');
     allTask();
@@ -45,10 +46,11 @@ gulp.task('serve', function(done) {
 });
 
 gulp.task('default', gulp.parallel('styles', 'scripts', function(done) {
-    connect.server({
-        root: [your_project_path],
-        port: process.env.PORT || 5000, // localhost:5000
-        livereload: false
-    });
+    browserSync({
+        server: {
+          baseDir: './'
+        },
+        port: process.env.PORT || 5000
+      });
     done();
 }));
