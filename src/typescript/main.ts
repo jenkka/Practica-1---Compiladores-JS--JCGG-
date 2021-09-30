@@ -29,4 +29,7 @@ declare global {
     interface Window { displayNews: Function; }
 }
 
-window.displayNews = displayNews;
+if (typeof window != "undefined") {
+    window.displayNews = displayNews;
+
+}
