@@ -5,7 +5,7 @@ export class News {
    
             // let url = "https://newsapi.org/v2/everything?q=" + data + "&from=2021-09-29&sortBy=popularity&apiKey=b46ba190b4ef4742900477a9b61b17ad";
             let url = "https://newsapi.org/v2/everything?q=" + data + "&from=" + this.getDate() + "&sortBy=popularity&apiKey=b46ba190b4ef4742900477a9b61b17ad";
-            console.log(url);
+            
             request.open("GET", url);
             request.onload = resolve;
             request.onerror = reject;

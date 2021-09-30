@@ -10,9 +10,9 @@
     "styles:watch": "gulp styles:watch",
     "scripts": "gulp scripts",
     "scripts:watch": "gulp scripts:watch",
-    "build": "gulp",
+    "build": "gulp default",
     "serve": "gulp serve",
-    "start": "node assets/scripts/main.js",
+    "start": "gulp default",
     "postinstall": "gulp default"
   },
   "author": "JCGG",
